@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/universeBG.jpg');
+  background-position: 15% 0%;
+  color: white;
+  margin: 20px;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.planet-title {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 25px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 5px -2px rgba(221, 221, 221, 0.75);
+}
+
+img {
+  width: 170px;
+}
+
+img:hover {
+  -webkit-animation: rotate-center 10s ease-in-out both;
+  animation: rotate-center 10s ease-in-out both;
+}
+
+.planet-card {
+  font-size: large;
+  font-weight: bold;
+  font-style:oblique;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+.mission-card {
+  display: inline-flex;
+  padding: 20px;
+}
+
+.mission {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-left: 100px;
+  padding: 10px;
+  width: 250px;
+  background: rgba(111, 111, 111, 0.429);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.833);
+}
+
+.mission:hover {
+  width: 260px;
+  transition: all 0.5s;
+  box-shadow: 10px 10px 5px -2px rgba(221, 221, 221, 0.75);
+}
+
+.mission-name {
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(3600deg);
+    transform: rotate(3600deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(3600deg);
+    transform: rotate(3600deg);
+  }
+}
